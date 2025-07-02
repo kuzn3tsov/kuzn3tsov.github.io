@@ -14,6 +14,7 @@
                 background-color:darkred;
                 color: lightgray;
                 font-family:'Courier New', Courier, monospace;
+                margin: 0 20px;
             }
             a {
                color:burlywood; 
@@ -27,6 +28,28 @@
             .full {
                 width: 100%;
             }
+            strong {
+                color: goldenrod;
+            }
+            address {
+                font-size: 0.83em;
+                font-weight: bold;
+                color: burlywood;
+            }
+            .main-img {
+                float: inline-start;
+                max-height: 130px;
+                margin: 0 20px;
+            }
+            .gold-tab {
+                padding: 20px 40px;
+                margin-left: -40px;
+                background-color: goldenrod;
+                color: darkred;
+            }
+            .no-circle {
+                list-style-type: none;
+            }
         </style>
     </head>
     <body>
@@ -34,13 +57,13 @@
             <h1>Lem Treursić Portfolio</h1>            
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li class="no-circle"><a href="index.html" class="gold-tab">Home</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <header>
-               <img src="lem.jpg" alt="Lem treursić fotografija za portfolio" height="100"> 
+               <img src="lem.jpg" class="main-img" alt="Lem treursić fotografija za portfolio"> 
             </header>
             <section>
                 <h2>About me</h2>
