@@ -1,6 +1,6 @@
 #Portfolio web 
 This repo has my portfolio
 ##Features
-- [ ] 1
-- [ ] 2
-- [ ] 3
+- [ ] About me
+- [ ] Contact info
+- [ ] Projects
