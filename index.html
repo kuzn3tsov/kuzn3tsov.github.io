@@ -14,7 +14,8 @@
                 background-color:darkred;
                 color: lightgray;
                 font-family:'Courier New', Courier, monospace;
-                margin: 0 20px;
+                margin: 0 auto;
+                max-width: 1024px;
             }
             a {
                color:burlywood; 
@@ -36,36 +37,47 @@
                 font-weight: bold;
                 color: burlywood;
             }
+            .top-space {
+                margin-top: 40px;
+            }
             .main-img {
                 float: inline-start;
                 max-height: 130px;
                 margin: 0 20px;
+                border-radius: 50%;
             }
             .gold-tab {
                 padding: 20px 40px;
                 margin-left: -40px;
+                border-radius: 10px 10px 0 0;
                 background-color: goldenrod;
                 color: darkred;
             }
             .no-circle {
                 list-style-type: none;
             }
+            .right {
+                float: right;
+            }
         </style>
     </head>
     <body>
         <header>
-            <h1>Lem Treursić Portfolio</h1>            
-            <nav>
-                <ul>
-                    <li class="no-circle"><a href="index.html" class="gold-tab">Home</a></li>
-                </ul>
-            </nav>
+            <div class="full">
+                <h1 class="right">Lem Treursić Portfolio</h1>
+            </div>
+            <div class="full">
+                <nav>
+                    <ul>
+                        <li class="no-circle"><a href="index.html" class="gold-tab">Home</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main>
-            <header>
-               <img src="lem.jpg" class="main-img" alt="Lem treursić fotografija za portfolio"> 
-            </header>
             <section>
+                <div class="top-space">
+                <img src="lem.jpg" class="main-img" alt="Lem treursić fotografija za portfolio">
                 <h2>About me</h2>
                 <p>I am <strong>Lem Treursić</strong> a <strong>developer</strong> from Sisak. Proficiency in software development and databases was acquired in a role as a .NET Developer at Cenosco, contributing to technological projects. Practical expertise includes .NET development, team coordination, and business management.</p>
                 <p>Self-driven professional growth has been complemented by hands-on experience across multiple industries. Quit coledge on my last year when i started working full time.</p>
@@ -81,6 +93,7 @@
                     <li>JavaScript</li>
                     <li>React</li>
                 </ul>
+                </div>                
             </section>
         </main>
         <footer>
