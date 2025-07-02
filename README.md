@@ -2,5 +2,5 @@
 This repo has my portfolio
 ## Features
 - [X] About me
-- [ ] Contact info
+- [X] Contact info
 - [ ] Projects
