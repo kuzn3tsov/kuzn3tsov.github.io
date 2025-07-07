@@ -3,4 +3,4 @@ This repo has my portfolio
 ## Features
 - [X] About me
 - [X] Contact info
-- [ ] Projects
+- [X] Projects
