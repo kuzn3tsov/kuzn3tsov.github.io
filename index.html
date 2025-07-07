@@ -11,6 +11,8 @@
     <meta name="author" content="Lem Treursić">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./media/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <!--CSS-->
     <style>
         body {
@@ -25,9 +27,15 @@
         a {
             color: burlywood;
         }
+        .submit-btn {
+            background-color: green;
+            color: goldenrod;
+            min-height: 50px;
+        }
         .brg-brown {
             background-color: brown;
         }
+
         .float-left {
             float: left;
         }
@@ -135,6 +143,14 @@
             color: #000000;
             padding: 5px;
         }
+        .input {
+            width: 100%;
+            border-radius: 25px;
+            border: 0 solid #e5e7eb;
+            box-sizing: border-box;
+            min-height: 30px;
+            margin: 15px 0;
+        }
     </style>
 </head>
 
@@ -239,10 +255,68 @@
                 </table>
             </div>
         </section>
+        <section>
+            <form>
+                <div>
+                    <label for="full_name">Full name</label>
+                    <input type="text" id="full_name" name="full_name" required class="input">
+                </div>
+                <hr>
+                <div>
+                    <label for="title">Title</label>
+                    <div class="full">
+                        <input type="checkbox" id="title_0" name="title" value="option1">
+                        <label for="title_0">Sir</label>
+                    </div>
+                    <div class="full">
+                        <input type="checkbox" id="title_1" name="title" value="option2">
+                        <label for="title_1">Madam</label>
+                    </div> 
+                </div>
+                <hr>
+                <div>
+                    <label for="e_mail">E-mail</label>
+                    <input type="email" class="input" id="e_mail" name="e_mail" required>
+                </div>
+                <hr>
+                <div>
+                    <label for="">Project description</label>
+                    <textarea class="input" id="" name="" required rows="10"></textarea>
+                </div>
+                <hr>
+                <div>
+                    <label for="budget">Budget</label>
+                    <select class="input" id="budget" name="budget" required>
+                        <option value="option1">&lt; 10K Euro</option>
+                        <option value="option2">10-100K Euro</option>
+                        <option value="option3">&gt; 100K Euro</option>
+                    </select>
+                </div>
+                <hr>
+                <div>
+                    <label for="service_required">Service required</label>
+                    <div class="full">
+                        <input type="radio" id="service_required_0" name="service_required" value="option1" required>
+                        <label for="service_required_0">Design</label>
+                    </div>                    
+                    <div class="full">
+                        <input type="radio" id="service_required_1" name="service_required" value="option2" required>
+                        <label for="service_required_1">Development</label>
+                    </div>                    
+                </div>
+                <hr>
+                <div>
+                    <input type="checkbox" id="gdpr_0" name="gdpr" value="option1">
+                    <label for="gdpr_0">I agree to the GDPR terms</label>
+                </div>
+                <hr>
+                <button class="input submit-btn" type="submit">Submit</button>
+            </form>
+        </section>
     </main>
     <footer>
         <div class="float-left full">
-            <h3>Contact me!</h3>
+            <h3>Contact info!</h3>
         </div>
         <div class="float-left fifth">
             <h4>Lem Treursić</h4>
