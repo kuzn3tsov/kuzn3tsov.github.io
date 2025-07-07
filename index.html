@@ -5,7 +5,8 @@
     <title>Lem Treursić - Portfolio</title>
     <!--Meta podaci za tražilice-->
     <meta charset="UTF-8">
-    <meta name="description" content="Portfolio of Lem Treursić fullstack developer experienced in C#, .net and JavaScript">
+    <meta name="description"
+        content="Portfolio of Lem Treursić fullstack developer experienced in C#, .net and JavaScript">
     <meta name="keywords" content="HTML5,Company,website,portfolio, developer">
     <meta name="author" content="Lem Treursić">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -98,8 +99,43 @@
             background-color: orange;
             padding: 5px;
         }
+
+        .table_component {
+            overflow: auto;
+            width: 100%;
+        }
+
+        .table_component table {
+            border: 1px solid #dededf;
+            height: 100%;
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse;
+            border-spacing: 1px;
+            text-align: left;
+        }
+
+        .table_component caption {
+            caption-side: top;
+            text-align: left;
+        }
+
+        .table_component th {
+            border: 1px solid #dededf;
+            background-color: #eceff1;
+            color: #000000;
+            padding: 5px;
+        }
+
+        .table_component td {
+            border: 1px solid #dededf;
+            background-color: #ffffff;
+            color: #000000;
+            padding: 5px;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <div class="full">
@@ -155,6 +191,55 @@
                 <h3><a href="https://kuzn3tsov.github.io/company-web/" target="_blank">Company web</a></h3>
                 <a href="https://kuzn3tsov.github.io/company-web/" target="_blank"><img src="./media/CompanyWeb.png"
                         class="portfolio-img" alt="Company web site for practice"></a>
+            </div>
+        </section>
+        <section>
+            <div class="top-space">
+                <h2>Price list</h2>
+            </div>
+            <div class="table_component" role="region" tabindex="0">
+                <table>
+                    <caption>Price table by quarter</caption>
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th>Q1</th>
+                            <th>Q2</th>
+                            <th>Q3</th>
+                            <th>Q4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sat:</td>
+                            <td>50</td>
+                            <td>60</td>
+                            <td>60</td>
+                            <td>40</td>
+                        </tr>
+                        <tr>
+                            <td>Dan:</td>
+                            <td>200</td>
+                            <td>300</td>
+                            <td>300</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>Tjedan:</td>
+                            <td>800</td>
+                            <td>900</td>
+                            <td>900</td>
+                            <td>750</td>
+                        </tr>
+                        <tr>
+                            <td>Mjesec:</td>
+                            <td>3000</td>
+                            <td>3500</td>
+                            <td>3500</td>
+                            <td>2500</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
     </main>
